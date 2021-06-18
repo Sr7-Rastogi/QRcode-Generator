@@ -7,5 +7,6 @@ qrcode=qrcode.QRCode(
     )
 url="https://www.youtube.com"
 qrcode.add_data(url)
+qrcode.make(fit=True)
 image=qrcode.make_image(fill="black",back_color="white")
 image.save("QRcode.png")
